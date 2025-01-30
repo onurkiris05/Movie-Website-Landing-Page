@@ -41,7 +41,8 @@ header {
 .primary-nav {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: max(1rem, 4vw);
+  font-size: 1.25em;
 }
 
 .primary-nav li {
@@ -75,19 +76,21 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   color: #fff;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  outline: none;
-  padding: 0 10px 0 45px;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  padding: 0 10px 0 45px !important;
   backdrop-filter: blur(10px);
 }
 
 .search input::placeholder {
   color: #fff;
+  opacity: 0.5;
+  transform: translateY(-10%);
 }
 
 .search i {
@@ -154,7 +157,7 @@ header {
 .banner .content h4 {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .banner .content h4 span {
@@ -249,7 +252,7 @@ header {
 
 /* PLAY TRAILER */
 
-.play {
+.play-trailer {
   position: absolute;
   bottom: 50px;
   left: 100px;
@@ -265,12 +268,12 @@ header {
   transition: 0.3s ease;
 }
 
-.play i {
+.play-trailer i {
   margin-right: 10px;
   font-size: 40px;
 }
 
-.play:hover {
+.play-trailer:hover {
   color: var(--clr-primary);
 }
 

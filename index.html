@@ -32,7 +32,7 @@
     </header>
     <main>
       <div class="banner">
-        <div class="content active">
+        <div class="content the-little-mermaid active">
           <img class="movie-title" src="/assets/images/the-little-mermaid-title.png" alt="" />
           <h4>
             <span>2023</span><span><i>12+</i></span
@@ -48,26 +48,96 @@
             <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
           </div>
         </div>
+        <div class="content the-65">
+          <img class="movie-title" src="/assets/images/the-65-title.png" alt="" />
+          <h4>
+            <span>2023</span><span><i>15+</i></span
+            ><span>1h 33min</span><span>Action</span>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis similique
+            odio obcaecati esse. Unde, aperiam sunt dolor nostrum pariatur laboriosam commodi vitae
+            expedita! Repellat voluptates impedit mollitia inventore voluptatum.
+          </p>
+          <div class="button">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Watch</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+          </div>
+        </div>
+        <div class="content the-covenant">
+          <img class="movie-title" src="/assets/images/the-covenant-title.png" alt="" />
+          <h4>
+            <span>2023</span><span><i>12+</i></span
+            ><span>2h 03min</span><span>War/Action</span>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis similique
+            odio obcaecati esse. Unde, aperiam sunt dolor nostrum pariatur laboriosam commodi vitae
+            expedita! Repellat voluptates impedit mollitia inventore voluptatum.
+          </p>
+          <div class="button">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Watch</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+          </div>
+        </div>
+        <div class="content the-black-demon">
+          <img class="movie-title" src="/assets/images/the-black-demon-title.png" alt="" />
+          <h4>
+            <span>2023</span><span><i>16+</i></span
+            ><span>1h 40min</span><span>Thriller</span>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis similique
+            odio obcaecati esse. Unde, aperiam sunt dolor nostrum pariatur laboriosam commodi vitae
+            expedita! Repellat voluptates impedit mollitia inventore voluptatum.
+          </p>
+          <div class="button">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Watch</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+          </div>
+        </div>
+        <div class="content the-tank">
+          <img class="movie-title" src="/assets/images//the-tank-title.png" alt="" />
+          <h4>
+            <span>2023</span><span><i>15+</i></span
+            ><span>1h 40min</span><span>Horror</span>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis similique
+            odio obcaecati esse. Unde, aperiam sunt dolor nostrum pariatur laboriosam commodi vitae
+            expedita! Repellat voluptates impedit mollitia inventore voluptatum.
+          </p>
+          <div class="button">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Watch</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+          </div>
+        </div>
         <div class="carousel-box">
           <div class="carousel">
-            <div class="carousel-item">
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid')"
+            >
               <img src="/assets/images/movies/the-little-mermaid.jpeg" alt="" />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" onclick="changeBg('bg-65.jpeg', 'the-65')">
               <img src="/assets/images/movies/the-65.jpg" alt="" />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" onclick="changeBg('bg-the-covenant.jpeg', 'the-covenant')">
               <img src="/assets/images/movies/the-covenant.jpg" alt="" />
             </div>
-            <div class="carousel-item">
+            <div
+              class="carousel-item"
+              onclick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');"
+            >
               <img src="/assets/images/movies/the-black-demon.jpg" alt="" />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" onclick="changeBg('bg-the-tank.jpeg', 'the-tank')">
               <img src="/assets/images/movies/the-tank.jpeg" alt="" />
             </div>
           </div>
         </div>
-        <a href="#" class="play"
+        <a href="#" class="play-trailer"
           ><i class="fa fa-play-circle-o" aria-hidden="true"></i> Watch Trailer
         </a>
         <ul class="sci">
@@ -84,20 +154,22 @@
       </div>
       <div class="trailer">
         <iframe
+          id="videoPlayer"
           width="90%"
           height="90%"
-          src="https://www.youtube.com/embed/kpGo2_d3oYE?si=4duPDr2o663P3E58"
+          src="https://www.youtube.com/embed/kpGo2_d3oYE?enablejsapi=1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <a href="#"><i class="fa fa-times" aria-hidden="true"></i> </a>
+        <a href="#" class="close-trailer"><i class="fa fa-times" aria-hidden="true"></i> </a>
       </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="module" src="/src/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
   </body>
 </html>
