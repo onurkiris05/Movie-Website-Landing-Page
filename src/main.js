@@ -40,7 +40,7 @@ closeTrailerBtn.addEventListener("click", toggleVideo);
 window.changeBg = function (bg, title) {
   const banner = document.querySelector(".banner");
   const contents = document.querySelectorAll(".content");
-  banner.style.background = `url("../assets/images/movies/${bg}")`;
+  banner.style.background = `url("${bg}")`;
   banner.style.backgroundSize = "cover";
   banner.style.backgroundPosition = "center";
 
@@ -56,6 +56,13 @@ window.changeBg = function (bg, title) {
     iframe.src = trailerUrls[title];
   }
 };
+
+window.addEventListener("DOMContentLoaded", () => {
+  changeBg(
+    "https://res.cloudinary.com/djzahz5ym/image/upload/v1744707493/fcfufe8tvxypyrpf5geb.jpg",
+    "the-little-mermaid"
+  );
+});
 
 const trailerUrls = {
   "the-little-mermaid": "https://www.youtube.com/embed/kpGo2_d3oYE?enablejsapi=1",
